@@ -1,8 +1,8 @@
 public class Cart implements HotelService {
     private int noCarts = 0;
 
-    public Cart(int noOfCarts){
-        this.noCarts = noOfCarts;
+    public Cart(int noCarts){
+        this.noCarts = noCarts;
     }
 
     @Override
@@ -10,7 +10,7 @@ public class Cart implements HotelService {
         return requestCart(noCarts);
     }
 
-    public String requestCart(int noOfCarts){
-        return ("Cart/s requested on room number: " + noOfCarts);
+    public String requestCart(int noCarts){
+        return ("Cart/s requested on room number: " + noCarts);
     }
 }
